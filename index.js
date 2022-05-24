@@ -6,10 +6,10 @@ const generateData= async (i)=> {
   let filenameDec = "" + i + ".json";
 
   let content = {
-        "description": "Money Maker - " + i,
+        "description": "Nu Skin LumiSpa iO #MySuperpower NFT #" + i.toString(10).padStart(4, "0"),
         "external_url": "https://forum.openzeppelin.com",
         "image": "https://raw.githubusercontent.com/ximplarandy/NuSkinMeta/main/data/" + i + ".png",
-        "name": "Money Maker " + i
+        "name": "Nu Skin LumiSpa iO #MySuperpower NFT #" + i.toString(10).padStart(4, "0")
       }
   fs.writeFileSync('data/' + filenameHex, JSON.stringify(content))
   fs.writeFileSync('data/' + filenameDec, JSON.stringify(content))
