@@ -14,7 +14,7 @@ const generateData= async (i)=> {
   fs.writeFileSync('data/' + filenameHex, JSON.stringify(content))
   fs.writeFileSync('data/' + filenameDec, JSON.stringify(content))
 }
-for (let i = 0; i < 500; i++) {
+for (let i = 0; i < 2000; i++) {
   console.log("generating:" + i);
   generateData(i);
 }
