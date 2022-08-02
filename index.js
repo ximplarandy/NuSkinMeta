@@ -7,14 +7,14 @@ const generateData= async (i)=> {
 
   let content = {
         "description": "Nu Skin LumiSpa iO #MySuperpower NFT #" + i.toString(10).padStart(4, "0"),
-        "external_url": "https://www.nuskin.com/",
+        "external_url": "https://www.lumispaionft.com/",
         "image": "https://raw.githubusercontent.com/ximplarandy/NuSkinMeta/main/data/" + i + ".png",
         "name": "Nu Skin LumiSpa iO #MySuperpower NFT #" + i.toString(10).padStart(4, "0")
       }
   fs.writeFileSync('data/' + filenameHex, JSON.stringify(content))
-  fs.writeFileSync('data/' + filenameDec, JSON.stringify(content))
+  // fs.writeFileSync('data/' + filenameDec, JSON.stringify(content))
 }
-for (let i = 0; i < 2000; i++) {
+for (let i = 0; i <= 7700; i++) {
   console.log("generating:" + i);
   generateData(i);
 }
